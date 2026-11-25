@@ -1,0 +1,70 @@
+name: User Story
+description: Describe user-centered product value.
+title: "[Story]: "
+labels: ["user-story"]
+body:
+  - type: markdown
+    attributes:
+      value: "Use: As a [user], I want [capability], so that [benefit]."
+  - type: input
+    id: epic
+    attributes:
+      label: Epic
+      placeholder: "EPIC-000: Name"
+    validations:
+      required: true
+  - type: input
+    id: feature
+    attributes:
+      label: Feature
+    validations:
+      required: true
+  - type: textarea
+    id: story
+    attributes:
+      label: User Story
+      description: "As a [user], I want [capability], so that [benefit]."
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Business value
+    validations:
+      required: true
+  - type: textarea
+    id: rules
+    attributes:
+      label: Business rules
+      description: Reference RN identifiers or state that none apply.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Provide observable Given, When, Then scenarios.
+      placeholder: "Given ...\nWhen ...\nThen ..."
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: List dependencies or state None.
+    validations:
+      required: true
+  - type: textarea
+    id: technical
+    attributes:
+      label: Technical considerations
+      description: Constraints and questions, without prescribing unapproved architecture.
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options: [Critical, High, Medium, Low]
+    validations:
+      required: true

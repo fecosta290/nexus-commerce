@@ -1,0 +1,31 @@
+name: Spike
+description: Timebox research that reduces uncertainty.
+title: "[Spike]: "
+labels: ["spike"]
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Learning or research objective
+    validations: {required: true}
+  - type: textarea
+    id: questions
+    attributes:
+      label: Questions to answer
+    validations: {required: true}
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: Expected deliverables
+    validations: {required: true}
+  - type: input
+    id: timebox
+    attributes:
+      label: Timebox
+      placeholder: "Example: 4 hours"
+    validations: {required: true}
+  - type: textarea
+    id: completion
+    attributes:
+      label: Completion criteria
+    validations: {required: true}
