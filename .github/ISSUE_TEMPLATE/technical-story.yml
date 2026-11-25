@@ -1,0 +1,37 @@
+name: Technical Story
+description: Define a verifiable technical outcome.
+title: "[Technical]: "
+labels: ["technical-story"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+    validations: {required: true}
+  - type: textarea
+    id: objective
+    attributes:
+      label: Technical objective
+    validations: {required: true}
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Expected outcome
+    validations: {required: true}
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+    validations: {required: true}
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: List dependencies or state None.
+    validations: {required: true}
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks
+      description: List risks or state None identified.
+    validations: {required: true}
